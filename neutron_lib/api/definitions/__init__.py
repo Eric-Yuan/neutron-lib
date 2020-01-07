@@ -113,7 +113,7 @@ from neutron_lib.api.definitions import vlantransparent
 from neutron_lib.api.definitions import vpn
 from neutron_lib.api.definitions import vpn_endpoint_groups
 from neutron_lib.api.definitions import vpn_flavors
-
+from neutron_lib.api.definitions.mizar import vpc, vpcnet, endpoint, droplet
 
 _ALL_API_DEFINITIONS = {
     address_scope,
@@ -135,7 +135,9 @@ _ALL_API_DEFINITIONS = {
     dhcpagentscheduler,
     dns,
     dns_domain_ports,
+    droplet,
     dvr,
+    endpoint,
     empty_string_filtering,
     expose_l3_conntrack_helper,
     expose_port_forwarding_in_fip,
@@ -216,6 +218,8 @@ _ALL_API_DEFINITIONS = {
     trunk_details,
     uplink_status_propagation,
     vlantransparent,
+    vpc,
+    vpcnet,
     vpn,
     vpn_endpoint_groups,
     vpn_flavors,
